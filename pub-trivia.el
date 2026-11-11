@@ -72,8 +72,7 @@ etc.")
 (defvar pub-trivia-data-lists
   '(pub-trivia-data-politics
     pub-trivia-data-sport
-    pub-trivia-data-emacs
-    pub-trivia-data-geography)
+    pub-trivia-data-emacs)
   "List of variables with questions and answers.
 Each list is of the form (CATEGORY DATA).  CATEGORY is a string
 describing the data.  While DATA is a plist of the form:
@@ -83,8 +82,7 @@ describing the data.  While DATA is a plist of the form:
                  STRING-OPTION-2
                  STRING-OPTION-3
                  STRING-OPTION-4)
-      :answer 2)
-")
+      :answer 2)")
 
 (defvar pub-trivia-data-politics
   '("Politics"
@@ -99,6 +97,37 @@ describing the data.  While DATA is a plist of the form:
                  "Italy"
                  "Greece"
                  "China")
+      :answer 3)
+    ( :question "Where is the Land of Fire?"
+      :choices ( "On the equator"
+                 "In the Sahara Desert"
+                 "The Northern hemisphere"
+                 "South America")
+      :answer 4)
+    ( :question "The capital of New York State is..."
+      :choices ( "... New York"
+                 "... Albany"
+                 "... Paris"
+                 "... London")
+      :answer 2)
+    ( :question "What is the population of Greece in rough numbers?"
+      :choices ( "10 million"
+                 "2 million"
+                 "5 million"
+                 "100 million")
+      :answer 1)
+    ( :question "The capital of Iceland?"
+      :choices ( "Stockholm"
+                 "Copenhagen"
+                 "Oslo"
+                 ;; TODO 2026-11-11: Check spelling of Iceland capital.
+                 "Reijkjavik")
+      :answer 4)
+    ( :question "\"Tundra\" refers to what?"
+      :choices ( "A cocktail"
+                 "School of philosophy"
+                 "Boreal forests"
+                 "Artistic movement")
       :answer 3))
   "Questions and answers about politics.")
 
@@ -139,41 +168,6 @@ describing the data.  While DATA is a plist of the form:
                  "C-h e")
       :answer 4))
   "Questions and answers about Emacs.")
-
-(defvar pub-trivia-data-geography
-  '("Geography"
-    ( :question "The Land of Fire is in..."
-      :choices ( "... the equator"
-                 "... off the coast of England"
-                 "... North of Australia"
-                 "... South America")
-      :answer 4)
-    ( :question "The capital of New York State is..."
-      :choices ( "... New York"
-                 "... Albany"
-                 "... Paris"
-                 "... London")
-      :answer 2)
-    ( :question "What is the population of Greece in rough numbers?"
-      :choices ( "10 million"
-                 "2 million"
-                 "5 million"
-                 "100 million")
-      :answer 1)
-    ( :question "The capital of Iceland?"
-      :choices ( "Stockholm"
-                 "Copenhagen"
-                 "Oslo"
-                 ;; TODO 2026-11-11: Check spelling of Iceland capital.
-                 "Reijkjavik")
-      :answer 4)
-    ( :question "\"Tundra\" refers to what?"
-      :choices ( "A cocktail"
-                 "School of philosophy"
-                 "Boreal forests"
-                 "Artistic movement")
-      :answer 3))
-  "Questions and answers about geography.")
 
 ;; TODO 2026-11-11: I want to change this approach.  It should be
 ;; pushing to a list.  At the end, the score/results buffer, reads
