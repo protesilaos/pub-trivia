@@ -98,6 +98,12 @@ describing the data.  While DATA is a plist of the form:
                  "A song performed by Joe Dassin"
                  "A famous bastion of anarchism")
       :answer 3)
+    ( :question "Which is the official language of Brazil?"
+      :choices ( "Spanish"
+                 "Brazilian"
+                 "Greek"
+                 "Portuguese")
+      :answer 4)
     ( :question "Where is Juan de Fuca from?"
       :choices ( "Spain"
                  "Italy"
