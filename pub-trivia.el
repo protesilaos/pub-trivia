@@ -155,12 +155,24 @@ describing the data.  While DATA is a plist of the form:
 
 (defvar pub-trivia-data-emacs
   '("Emacs"
-    ( :question "What to do when Emacs window placement make no sense?"
+    ( :question "What to do when window placement make no sense?"
       :choices ( "display-buffer-alist"
                  "M-x doctor"
                  "M-x report-emacs-bug"
                  "set-window-configuration")
       :answer 1)
+    ( :question "Default keybinding to get previous minibuffer value?"
+      :choices ( "C-p"
+                 "C-x p"
+                 "M-p"
+                 "C-M-p")
+      :answer 3)
+    ( :question "How many themes has Protesilaos developed?"
+      :choices ( "Less than 10"
+                 "More than 40"
+                 "All the modus-themes"
+                 "About 20")
+      :answer 2)
     ( :question "Default keybinding to read echo area messages?"
       :choices ( "C-h m"
                  "C-h r"
