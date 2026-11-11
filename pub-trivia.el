@@ -72,7 +72,8 @@ etc.")
 (defvar pub-trivia-data-lists
   '(pub-trivia-data-politics
     pub-trivia-data-sport
-    pub-trivia-data-emacs)
+    pub-trivia-data-emacs
+    pub-trivia-data-keyboards)
   "List of variables with questions and answers.
 Each list is of the form (CATEGORY DATA).  CATEGORY is a string
 describing the data.  While DATA is a plist of the form:
@@ -263,6 +264,16 @@ describing the data.  While DATA is a plist of the form:
                  "consult-focus-lines")
       :answer 2))
   "Questions and answers about Emacs.")
+
+(defvar pub-trivia-data-keyboards
+  '("Mechanical keyboards"
+    ( :question "In the mechanical keyboard community, \"Alice\" is..."
+      :choices ( "Famous influencer"
+                 "Keyboard layout"
+                 "Switch manufacture"
+                 "Keycap designer")
+      :answer 2))
+  "Questions and answers about mechanical keyboards.")
 
 ;; TODO 2026-11-11: I want to change this approach.  It should be
 ;; pushing to a list.  At the end, the score/results buffer, reads
