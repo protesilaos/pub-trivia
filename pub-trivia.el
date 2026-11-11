@@ -178,7 +178,13 @@ describing the data.  While DATA is a plist of the form:
                  "C-h r"
                  "C-h a"
                  "C-h e")
-      :answer 4))
+      :answer 4)
+    ( :question "Command to delete matching lines?"
+      :choices ( "occur"
+                 "flush-lines"
+                 "keep-lines"
+                 "consult-focus-lines")
+      :answer 2))
   "Questions and answers about Emacs.")
 
 ;; TODO 2026-11-11: I want to change this approach.  It should be
