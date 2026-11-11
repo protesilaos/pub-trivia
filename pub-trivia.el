@@ -134,6 +134,12 @@ describing the data.  While DATA is a plist of the form:
                  "The Northern hemisphere"
                  "South America")
       :answer 4)
+    ( :question "The official name of Uruguay is..."
+      :choices ( "Oriental Republic of Uruguay"
+                 "Republic of Uruguay"
+                 "United States of Uruguay"
+                 "Kingdom of East Uruguay")
+      :answer 1)
     ( :question "The capital of the State of New York State is..."
       :choices ( "New York"
                  "Paris"
