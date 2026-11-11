@@ -184,10 +184,10 @@ describing the data.  While DATA is a plist of the form:
 
 (defvar pub-trivia-data-emacs
   '("Emacs"
-    ( :question "What to do when window placement make no sense?"
+    ( :question "What to check when window placement make no sense?"
       :choices ( "display-buffer-alist"
-                 "M-x doctor"
-                 "M-x report-emacs-bug"
+                 "doctor"
+                 "report-emacs-bug"
                  "set-window-configuration")
       :answer 1)
     ( :question "Default keybinding to get previous minibuffer value?"
