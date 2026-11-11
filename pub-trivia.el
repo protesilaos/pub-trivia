@@ -278,7 +278,13 @@ describing the data.  While DATA is a plist of the form:
                  "The actuation mechanism of a switch"
                  "High-pitched sound"
                  "Expensive keycap sets")
-      :answer 3))
+      :answer 3)
+    ( :question "The Cherry MX Red is a famous..."
+      :choices ( "Linear switch"
+                 "Tactile switch"
+                 "Clicky switch"
+                 "Silent switch")
+      :answer 1))
   "Questions and answers about mechanical keyboards.")
 
 ;; TODO 2026-11-11: I want to change this approach.  It should be
