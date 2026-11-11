@@ -104,12 +104,12 @@ describing the data.  While DATA is a plist of the form:
                  "The Northern hemisphere"
                  "South America")
       :answer 4)
-    ( :question "The capital of New York State is..."
+    ( :question "The capital of the State of New York State is..."
       :choices ( "... New York"
-                 "... Albany"
                  "... Paris"
+                 "... Albany"
                  "... London")
-      :answer 2)
+      :answer 3)
     ( :question "What is the population of Greece in rough numbers?"
       :choices ( "10 million"
                  "2 million"
@@ -120,15 +120,14 @@ describing the data.  While DATA is a plist of the form:
       :choices ( "Stockholm"
                  "Copenhagen"
                  "Oslo"
-                 ;; TODO 2026-11-11: Check spelling of Iceland capital.
-                 "Reijkjavik")
+                 "Reykjavík")
       :answer 4)
     ( :question "\"Tundra\" refers to what?"
-      :choices ( "A cocktail"
-                 "School of philosophy"
+      :choices ( "Frigid grasslands"
+                 "Yogic tradition"
                  "Boreal forests"
                  "Artistic movement")
-      :answer 3))
+      :answer 1))
   "Questions and answers about politics.")
 
 (defvar pub-trivia-data-sport
