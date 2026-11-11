@@ -107,8 +107,8 @@ describing the data.  While DATA is a plist of the form:
     ( :question "Football is a sport in which players..."
       :choices ( "... Hug the ball"
                  "... Kick the ball"
-                 "... Toss the ball"
-                 "... Volley the ball")
+                 "... Volley the ball"
+                 "... Observe the ball")
       :answer 2)
     ( :question "Which team won Euro 2004 in Portugal in their own capital?"
       :choices ( "England"
@@ -117,17 +117,11 @@ describing the data.  While DATA is a plist of the form:
                  "Greece")
       :answer 4)
     ( :question "Which group of tourists took Euro 1992 by storm?"
-      :choices ( "The English"
-                 "The Irish"
-                 "The Danish"
-                 "The Germans")
-      :answer 3)
-    ( :question "Who has provided the most assists in a single Champions League season? (as of 2026-11-11)"
-      :choices ( "James Milner"
-                 "Lionel Messi"
-                 "Cristiano Ronaldo"
-                 "Angelos Charisteas")
-      :answer 1))
+      :choices ( "English"
+                 "Irish"
+                 "Danish"
+                 "German")
+      :answer 3))
   "Questions and answers about sport.")
 
 (defvar pub-trivia-data-emacs
