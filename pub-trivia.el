@@ -149,7 +149,37 @@ describing the data.  While DATA is a plist of the form:
                  "Irish"
                  "Danish"
                  "German")
-      :answer 3))
+      :answer 3)
+    ( :question "The protagonist in the Metroid series is..."
+      :choices ( "Metroid"
+                 "Samus"
+                 "Luigi"
+                 "Zelda")
+      :answer 2)
+    ( :question "In Tales of Symphonia you mostly..."
+      :choices ( "compose music"
+                 "read stories"
+                 "think of Tales of Berseria"
+                 "save the world")
+      :answer 4)
+    ( :question "In StarCraft players..."
+      :choices ( "mostly fend off Zerglings"
+                 "explore the universe"
+                 "wonder where is Prince Arthas"
+                 "read the stars")
+      :answer 1)
+    ( :question "What is the name of Super Mario's brother?"
+      :choices ( "Wario"
+                 "Silvio"
+                 "Luigi"
+                 "Carlo")
+      :answer 3)
+    ( :question "In StarCraft players..."
+      :choices ( "mostly fend off Zerglings"
+                 "explore the universe"
+                 "wonder where is Prince Arthas"
+                 "read the stars")
+      :answer 1))
   "Questions and answers about sport.")
 
 (defvar pub-trivia-data-emacs
