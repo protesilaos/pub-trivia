@@ -29,6 +29,10 @@
 ;; command to get started.  Then type 1, 2, 3, 4 to pick a choice.
 ;; When you go through all the questions, you will be presented with
 ;; the results.
+;;
+;; As you can obviously tell, the backronyms are: Prot Understands
+;; Basic ... TRIVIA; PUB ... Trivia Randomly Inserted Verily Inspire
+;; Angst.
 
 ;;; Code:
 (defgroup pub-trivia nil
