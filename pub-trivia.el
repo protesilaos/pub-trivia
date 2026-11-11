@@ -165,6 +165,12 @@ describing the data.  While DATA is a plist of the form:
                  "Yogic tradition"
                  "Boreal forests"
                  "Artistic movement")
+      :answer 1)
+    ( :question "What do Greek Cypriots mean when they order a \"half and half\" coffee?"
+      :choices ( "Half water, half milk"
+                 "Half water, half ice"
+                 "Half coffee, half chocolate"
+                 "Half water, half vodka")
       :answer 1))
   "Questions and answers about politics and culture.")
 
