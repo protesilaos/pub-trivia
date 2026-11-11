@@ -273,7 +273,7 @@ describing the data.  While DATA is a plist of the form:
 ;; TODO 2026-11-11: In the header line also have a hint to type 1-4
 ;; for the choice.
 (defun pub-trivia--prepare-quiz-buffer (question-data all-data)
-  "Prepare buffer to display DATA.
+  "Prepare buffer to display QUESTION-DATA and keep track of ALL-DATA.
 QUESTION-DATA is an element of `pub-trivia-data-lists' and has the form
 documented therein."
   (let* ((buffer (get-buffer-create "*pub-trivia*"))
