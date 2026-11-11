@@ -8,3 +8,4 @@ results.
 + Git repository: <https://github.com/protesilaos/pub-trivia>
 + Backronyms: Prot Understands Basic ... TRIVIA; PUB ... Trivia
   Randomly Inserted Verily Inspire Angst.
++ Video demonstration (wrote it live!): <https://protesilaos.com/codelog/2026-11-11-emacs-pub-trivia-package-scratch/>
