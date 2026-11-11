@@ -116,6 +116,12 @@ describing the data.  While DATA is a plist of the form:
                  "Greece"
                  "China")
       :answer 3)
+    ( :question "Which is the capital of Romania?"
+      :choices ( "Rome"
+                 "Bucharest"
+                 "Timisoara"
+                 "Cluj-Napoca")
+      :answer 2)
     ( :question "Where is the Land of Fire?"
       :choices ( "On the equator"
                  "In the Sahara Desert"
