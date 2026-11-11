@@ -166,7 +166,7 @@ describing the data.  While DATA is a plist of the form:
                  "Boreal forests"
                  "Artistic movement")
       :answer 1))
-  "Questions and answers about politics.")
+  "Questions and answers about politics and culture.")
 
 (defvar pub-trivia-data-sport
   '("Sport"
