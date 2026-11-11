@@ -272,7 +272,13 @@ describing the data.  While DATA is a plist of the form:
                  "Keyboard layout"
                  "Switch manufacture"
                  "Keycap designer")
-      :answer 2))
+      :answer 2)
+    ( :question "What does \"clacky\" refer to?"
+      :choices ( "Whimsical keyboard layout"
+                 "The actuation mechanism of a switch"
+                 "High-pitched sound"
+                 "Expensive keycap sets")
+      :answer 3))
   "Questions and answers about mechanical keyboards.")
 
 ;; TODO 2026-11-11: I want to change this approach.  It should be
