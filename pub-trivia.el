@@ -92,6 +92,12 @@ describing the data.  While DATA is a plist of the form:
                  "Papaoutai"
                  "Les Trois Mousquaitieres")
       :answer 2)
+    ( :question "\"Le Café Des Trois Colombes\" is..."
+      :choices ( "A painting by Jean-François Millet"
+                 "Auguste Rodin's favourite coffee shop"
+                 "A song performed by Joe Dassin"
+                 "A famous bastion of anarchism")
+      :answer 3)
     ( :question "Where is Juan de Fuca from?"
       :choices ( "Spain"
                  "Italy"
