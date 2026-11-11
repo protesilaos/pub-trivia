@@ -116,7 +116,7 @@ describing the data.  While DATA is a plist of the form:
                  "5 million"
                  "100 million")
       :answer 1)
-    ( :question "The capital of Iceland?"
+    ( :question "Which is the capital of Iceland?"
       :choices ( "Stockholm"
                  "Copenhagen"
                  "Oslo"
