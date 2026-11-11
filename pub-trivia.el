@@ -72,6 +72,7 @@ etc.")
 (defvar pub-trivia-data-lists
   '(pub-trivia-data-politics
     pub-trivia-data-sport
+    pub-trivia-data-video-games
     pub-trivia-data-emacs
     pub-trivia-data-keyboards)
   "List of variables with questions and answers.
@@ -168,7 +169,7 @@ describing the data.  While DATA is a plist of the form:
   "Questions and answers about politics.")
 
 (defvar pub-trivia-data-sport
-  '("Sport and Games"
+  '("Sport"
     ( :question "Football is a sport in which players..."
       :choices ( "Hug the ball"
                  "Kick the ball"
@@ -181,12 +182,6 @@ describing the data.  While DATA is a plist of the form:
                  "Medieval monster"
                  "Dog breed")
       :answer 2)
-    ( :question "\"The Legend of Zelda: Link's Awakening\" was originally released on the..."
-      :choices ( "Super Nintendo Entertainment System"
-                 "Nintendo Gamecube"
-                 "Nintendo Gameboy"
-                 "Nintendo Wii")
-      :answer 3)
     ( :question "Which team won Euro 2004 in Portugal?"
       :choices ( "England"
                  "Czechia"
@@ -198,6 +193,16 @@ describing the data.  While DATA is a plist of the form:
                  "Irish"
                  "Danish"
                  "German")
+      :answer 3))
+  "Questions and answers about sport.")
+
+(defvar pub-trivia-data-video-games
+  '("Video Games"
+    ( :question "\"The Legend of Zelda: Link's Awakening\" was originally released on the..."
+      :choices ( "Super Nintendo Entertainment System"
+                 "Nintendo Gamecube"
+                 "Nintendo Gameboy"
+                 "Nintendo Wii")
       :answer 3)
     ( :question "The protagonist in the Metroid series is..."
       :choices ( "Metroid"
@@ -229,7 +234,7 @@ describing the data.  While DATA is a plist of the form:
                  "wonder where is Prince Arthas"
                  "read the stars")
       :answer 1))
-  "Questions and answers about sport.")
+  "Questions and answers about video games.")
 
 (defvar pub-trivia-data-emacs
   '("Emacs"
