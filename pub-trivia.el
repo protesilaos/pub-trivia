@@ -180,6 +180,12 @@ describing the data.  While DATA is a plist of the form:
                  "Medieval monster"
                  "Dog breed")
       :answer 2)
+    ( :question "\"The Legend of Zelda: Link's Awakening\" was originally released on the..."
+      :choices ( "Super Nintendo Entertainment System"
+                 "Nintendo Gamecube"
+                 "Nintendo Gameboy"
+                 "Nintendo Wii")
+      :answer 3)
     ( :question "Which team won Euro 2004 in Portugal?"
       :choices ( "England"
                  "Czechia"
