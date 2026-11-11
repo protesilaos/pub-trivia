@@ -138,7 +138,7 @@ describing the data.  While DATA is a plist of the form:
                  "Volley the ball"
                  "Observe the ball")
       :answer 2)
-    ( :question "Which team won Euro 2004 in Portugal in their own capital?"
+    ( :question "Which team won Euro 2004 in Portugal?"
       :choices ( "England"
                  "Czechia"
                  "Portugal"
