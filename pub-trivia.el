@@ -182,7 +182,7 @@ describing the data.  While DATA is a plist of the form:
                  "Medieval monster"
                  "Dog breed")
       :answer 2)
-    ( :question "Which team won Euro 2004 in Portugal?"
+    ( :question "Which team won Euro 2004?"
       :choices ( "England"
                  "Czechia"
                  "Portugal"
