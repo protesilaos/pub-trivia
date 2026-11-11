@@ -176,6 +176,12 @@ describing the data.  While DATA is a plist of the form:
                  "Volley the ball"
                  "Observe the ball")
       :answer 2)
+    ( :question "\"Gridiron\" is used in the context of..."
+      :choices ( "Types of football"
+                 "Harry Potter sports"
+                 "Board games"
+                 "A legendary continent")
+      :answer 1)
     ( :question "\"Schutzhund\" refers to..."
       :choices ( "German school"
                  "Dog sport"
