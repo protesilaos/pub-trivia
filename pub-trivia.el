@@ -194,6 +194,12 @@ describing the data.  While DATA is a plist of the form:
                  "Portugal"
                  "Greece")
       :answer 4)
+    ( :question "Where is a \"centre half\" positioned in football?"
+      :choices ( "In defence"
+                 "In the middle of the pitch"
+                 "Between the goal posts"
+                 "In the half spaces between attackers")
+      :answer 1)
     ( :question "Which group of tourists took Euro 1992 by storm?"
       :choices ( "English"
                  "Irish"
