@@ -208,7 +208,7 @@ describing the data.  While DATA is a plist of the form:
       :answer 3)
     ( :question "The \"panenka\" in football is what exactly?"
       :choices ( "An offensive manoeuvre that leads to a goal"
-                 "Defense tactics to frustrate opponents"
+                 "Defence tactics to frustrate opponents"
                  "Technique to shoot a penalty"
                  "A super-effective dribbling move")
       :answer 3))
