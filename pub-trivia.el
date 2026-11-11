@@ -122,6 +122,12 @@ describing the data.  While DATA is a plist of the form:
                  "Timisoara"
                  "Cluj-Napoca")
       :answer 2)
+    ( :question "\"De lege lata\" refers to..."
+      :choices ( "Existing law"
+                 "Coffee drink"
+                 "Papal encyclical"
+                 "Milkshake")
+      :answer 1)
     ( :question "Where is the Land of Fire?"
       :choices ( "On the equator"
                  "In the Sahara Desert"
