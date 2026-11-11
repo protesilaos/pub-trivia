@@ -85,7 +85,7 @@ describing the data.  While DATA is a plist of the form:
       :answer 2)")
 
 (defvar pub-trivia-data-politics
-  '("Politics"
+  '("Politics, History, and Geography"
     ( :question "Which is the French national anthem?"
       :choices ( "Les Hommes Qui Passent"
                  "La Marseilaise"
@@ -131,7 +131,7 @@ describing the data.  While DATA is a plist of the form:
   "Questions and answers about politics.")
 
 (defvar pub-trivia-data-sport
-  '("Sport"
+  '("Sport and Games"
     ( :question "Football is a sport in which players..."
       :choices ( "... Hug the ball"
                  "... Kick the ball"
