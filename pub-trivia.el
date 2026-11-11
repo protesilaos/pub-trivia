@@ -126,19 +126,19 @@ describing the data.  While DATA is a plist of the form:
 
 (defvar pub-trivia-data-emacs
   '("Emacs"
-    ( :question "How do you add order to the window management madness?"
+    ( :question "What to do when Emacs window placement make no sense?"
       :choices ( "display-buffer-alist"
                  "M-x doctor"
-                 "No problem; no stress: just call Prot"
+                 "M-x report-emacs-bug"
                  "set-window-configuration")
       :answer 1)
-    ( :question "Default keybinding to read echo area messages"
+    ( :question "Default keybinding to read echo area messages?"
       :choices ( "C-h m"
                  "C-h r"
                  "C-h a"
                  "C-h e")
       :answer 4))
-  "Questions and answers about emacs.")
+  "Questions and answers about Emacs.")
 
 (defvar pub-trivia-data-geography
   '("Geography"
