@@ -104,6 +104,12 @@ describing the data.  While DATA is a plist of the form:
                  "Greek"
                  "Portuguese")
       :answer 4)
+    ( :question "What are the Hungarians also known as?"
+      :choices ( "Magyars"
+                 "Ostrogoths"
+                 "Burgundians"
+                 "Visigoths")
+      :answer 1)
     ( :question "Where is Juan de Fuca from?"
       :choices ( "Spain"
                  "Italy"
