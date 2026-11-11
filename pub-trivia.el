@@ -171,7 +171,13 @@ describing the data.  While DATA is a plist of the form:
                  "Half water, half ice"
                  "Half coffee, half chocolate"
                  "Half water, half vodka")
-      :answer 1))
+      :answer 1)
+    ( :question "Café frappé is most popular in..."
+      :choices ( "France"
+                 "Austria"
+                 "Sweden"
+                 "Greece")
+      :answer 4))
   "Questions and answers about politics and culture.")
 
 (defvar pub-trivia-data-sport
