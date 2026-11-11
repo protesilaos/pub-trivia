@@ -292,6 +292,12 @@ describing the data.  While DATA is a plist of the form:
                  "C-h a"
                  "C-h e")
       :answer 4)
+    ( :question "Which command is bound to \"C-x 4 c\" by default?"
+      :choices ( "clone-indirect-buffer-other-window"
+                 "copy-file"
+                 "copy-matching-lines"
+                 "copy-to-buffer")
+      :answer 1)
     ( :question "Command to delete matching lines?"
       :choices ( "occur"
                  "flush-lines"
