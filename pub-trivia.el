@@ -105,10 +105,10 @@ describing the data.  While DATA is a plist of the form:
                  "South America")
       :answer 4)
     ( :question "The capital of the State of New York State is..."
-      :choices ( "... New York"
-                 "... Paris"
-                 "... Albany"
-                 "... London")
+      :choices ( "New York"
+                 "Paris"
+                 "Albany"
+                 "London")
       :answer 3)
     ( :question "What is the population of Greece in rough numbers?"
       :choices ( "10 million"
@@ -133,10 +133,10 @@ describing the data.  While DATA is a plist of the form:
 (defvar pub-trivia-data-sport
   '("Sport and Games"
     ( :question "Football is a sport in which players..."
-      :choices ( "... Hug the ball"
-                 "... Kick the ball"
-                 "... Volley the ball"
-                 "... Observe the ball")
+      :choices ( "Hug the ball"
+                 "Kick the ball"
+                 "Volley the ball"
+                 "Observe the ball")
       :answer 2)
     ( :question "Which team won Euro 2004 in Portugal in their own capital?"
       :choices ( "England"
