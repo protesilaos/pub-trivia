@@ -284,7 +284,13 @@ describing the data.  While DATA is a plist of the form:
                  "Tactile switch"
                  "Clicky switch"
                  "Silent switch")
-      :answer 1))
+      :answer 1)
+    ( :question "The OEM keycap profile is closer to..."
+      :choices ( "XDA"
+                 "MOA"
+                 "MTNU"
+                 "Cherry")
+      :answer 4))
   "Questions and answers about mechanical keyboards.")
 
 ;; TODO 2026-11-11: I want to change this approach.  It should be
