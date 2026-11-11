@@ -244,7 +244,7 @@ describing the data.  While DATA is a plist of the form:
                  "M-p"
                  "C-M-p")
       :answer 3)
-    ( :question "How many themes has Protesilaos developed?"
+    ( :question "How many original themes has Protesilaos developed?"
       :choices ( "Less than 10"
                  "More than 40"
                  "All the modus-themes"
