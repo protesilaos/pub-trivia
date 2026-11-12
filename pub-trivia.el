@@ -44,7 +44,7 @@
 (defvar-local pub-trivia-score nil)
 
 (defface pub-trivia-category
-  '((t :inherit shadow))
+  '((t :inherit shadow :height 1.5))
   "Face for the category of the question.
 The category is a short description, such as \"Politics\", \"Emacs\",
 etc.")
