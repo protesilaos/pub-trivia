@@ -500,24 +500,19 @@ and correct choices, respectively."
      '("5" "10" "15" "20")
      nil t nil 'pub-trivia-number-of-questions-prompt-history default)))
 
-;; FIXME 2026-11-11: This is not deterministic.  We should always return a list with NUMBER-OF-QUESTIONS.
-(defun pub-trivia-get-questions (number-of-questions &optional existing-data number-of-attempts)
-  "Return list with NUMBER-OF-QUESTIONS from `pub-trivia-data-lists'.
-Build on the EXISTING-DATA until its length matches NUMBER-OF-QUESTIONS.
-In this case, abort after NUMBER-OF-ATTEMPTS."
-  (let ((all-questions-choices nil)
-        (number-of-attempts 3))
-    (while (not (length= all-questions-choices number-of-questions))
+;; NOTE 2026-11-12: This review should fix it for small numbers, but
+;; will not always work.  I think this is okay in practice.
+(defun pub-trivia-get-questions (number-of-questions)
+  "Return list with NUMBER-OF-QUESTIONS from `pub-trivia-data-lists'."
+  (let ((all-questions-choices (mapcar #'symbol-value pub-trivia-data-lists))
+        (result nil))
+    (while (not (length= result number-of-questions))
       (let* ((questions-choices-variable (seq-random-elt pub-trivia-data-lists))
              (questions-choices-value (symbol-value questions-choices-variable))
              (question-choices (seq-random-elt questions-choices-value)))
-        (if (and (member question-choices all-questions-choices)
-                 (> number-of-attempts 0))
-            (progn
-              (pub-trivia-get-questions 1 all-questions-choices number-of-attempts)
-              (setq number-of-attempts (- number-of-attempts 1)))
-          (push question-choices all-questions-choices))))
-    all-questions-choices))
+        (delete question-choices all-questions-choices)
+        (push question-choices result)))
+    result))
 
 ;;;###autoload
 (defun pub-trivia (number-of-questions)
