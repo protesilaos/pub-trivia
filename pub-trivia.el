@@ -87,251 +87,261 @@ describing the data.  While DATA is a plist of the form:
       :answer 2)")
 
 (defvar pub-trivia-data-politics
-  '("Politics, History, and Geography"
-    ( :question "Which is the French national anthem?"
-      :choices ( "Les Hommes Qui Passent"
-                 "La Marseilaise"
-                 "Papaoutai"
-                 "Les Trois Mousquaitieres")
-      :answer 2)
-    ( :question "\"Le Café Des Trois Colombes\" is..."
-      :choices ( "A painting by Jean-François Millet"
-                 "Auguste Rodin's favourite coffee shop"
-                 "A song performed by Joe Dassin"
-                 "A famous bastion of anarchism")
-      :answer 3)
-    ( :question "Which is the official language of Brazil?"
-      :choices ( "Spanish"
-                 "Brazilian"
-                 "Greek"
-                 "Portuguese")
-      :answer 4)
-    ( :question "What are the Hungarians also known as?"
-      :choices ( "Magyars"
-                 "Ostrogoths"
-                 "Burgundians"
-                 "Visigoths")
-      :answer 1)
-    ( :question "Where is Juan de Fuca from?"
-      :choices ( "Spain"
-                 "Italy"
-                 "Greece"
-                 "China")
-      :answer 3)
-    ( :question "Which is the capital of Romania?"
-      :choices ( "Rome"
-                 "Bucharest"
-                 "Timisoara"
-                 "Cluj-Napoca")
-      :answer 2)
-    ( :question "\"De lege lata\" refers to..."
-      :choices ( "Existing law"
-                 "Coffee drink"
-                 "Papal encyclical"
-                 "Milkshake")
-      :answer 1)
-    ( :question "Where is the Land of Fire?"
-      :choices ( "On the equator"
-                 "In the Sahara Desert"
-                 "The Northern hemisphere"
-                 "South America")
-      :answer 4)
-    ( :question "The official name of Uruguay is..."
-      :choices ( "Oriental Republic of Uruguay"
-                 "Republic of Uruguay"
-                 "United States of Uruguay"
-                 "Kingdom of East Uruguay")
-      :answer 1)
-    ( :question "The capital of the State of New York State is..."
-      :choices ( "New York"
-                 "Paris"
-                 "Albany"
-                 "London")
-      :answer 3)
-    ( :question "What is the population of Greece in rough numbers?"
-      :choices ( "10 million"
-                 "2 million"
-                 "5 million"
-                 "100 million")
-      :answer 1)
-    ( :question "Which is the capital of Iceland?"
-      :choices ( "Stockholm"
-                 "Copenhagen"
-                 "Oslo"
-                 "Reykjavík")
-      :answer 4)
-    ( :question "\"Tundra\" refers to what?"
-      :choices ( "Frigid grasslands"
-                 "Yogic tradition"
-                 "Boreal forests"
-                 "Artistic movement")
-      :answer 1)
-    ( :question "What do Greek Cypriots mean when they order a \"half and half\" coffee?"
-      :choices ( "Half water, half milk"
-                 "Half water, half ice"
-                 "Half coffee, half chocolate"
-                 "Half water, half vodka")
-      :answer 1)
-    ( :question "Café frappé is most popular in..."
-      :choices ( "France"
-                 "Austria"
-                 "Sweden"
-                 "Greece")
-      :answer 4))
+  (mapcar
+   (lambda (element)
+     (plist-put element :category "Politics, History, and Geography"))
+   '(( :question "Which is the French national anthem?"
+       :choices ( "Les Hommes Qui Passent"
+                  "La Marseilaise"
+                  "Papaoutai"
+                  "Les Trois Mousquaitieres")
+       :answer 2)
+     ( :question "\"Le Café Des Trois Colombes\" is..."
+       :choices ( "A painting by Jean-François Millet"
+                  "Auguste Rodin's favourite coffee shop"
+                  "A song performed by Joe Dassin"
+                  "A famous bastion of anarchism")
+       :answer 3)
+     ( :question "Which is the official language of Brazil?"
+       :choices ( "Spanish"
+                  "Brazilian"
+                  "Greek"
+                  "Portuguese")
+       :answer 4)
+     ( :question "What are the Hungarians also known as?"
+       :choices ( "Magyars"
+                  "Ostrogoths"
+                  "Burgundians"
+                  "Visigoths")
+       :answer 1)
+     ( :question "Where is Juan de Fuca from?"
+       :choices ( "Spain"
+                  "Italy"
+                  "Greece"
+                  "China")
+       :answer 3)
+     ( :question "Which is the capital of Romania?"
+       :choices ( "Rome"
+                  "Bucharest"
+                  "Timisoara"
+                  "Cluj-Napoca")
+       :answer 2)
+     ( :question "\"De lege lata\" refers to..."
+       :choices ( "Existing law"
+                  "Coffee drink"
+                  "Papal encyclical"
+                  "Milkshake")
+       :answer 1)
+     ( :question "Where is the Land of Fire?"
+       :choices ( "On the equator"
+                  "In the Sahara Desert"
+                  "The Northern hemisphere"
+                  "South America")
+       :answer 4)
+     ( :question "The official name of Uruguay is..."
+       :choices ( "Oriental Republic of Uruguay"
+                  "Republic of Uruguay"
+                  "United States of Uruguay"
+                  "Kingdom of East Uruguay")
+       :answer 1)
+     ( :question "The capital of the State of New York State is..."
+       :choices ( "New York"
+                  "Paris"
+                  "Albany"
+                  "London")
+       :answer 3)
+     ( :question "What is the population of Greece in rough numbers?"
+       :choices ( "10 million"
+                  "2 million"
+                  "5 million"
+                  "100 million")
+       :answer 1)
+     ( :question "Which is the capital of Iceland?"
+       :choices ( "Stockholm"
+                  "Copenhagen"
+                  "Oslo"
+                  "Reykjavík")
+       :answer 4)
+     ( :question "\"Tundra\" refers to what?"
+       :choices ( "Frigid grasslands"
+                  "Yogic tradition"
+                  "Boreal forests"
+                  "Artistic movement")
+       :answer 1)
+     ( :question "What do Greek Cypriots mean when they order a \"half and half\" coffee?"
+       :choices ( "Half water, half milk"
+                  "Half water, half ice"
+                  "Half coffee, half chocolate"
+                  "Half water, half vodka")
+       :answer 1)
+     ( :question "Café frappé is most popular in..."
+       :choices ( "France"
+                  "Austria"
+                  "Sweden"
+                  "Greece")
+       :answer 4)))
   "Questions and answers about politics and culture.")
 
 (defvar pub-trivia-data-sport
-  '("Sport"
-    ( :question "Football is a sport in which players..."
-      :choices ( "Hug the ball"
-                 "Kick the ball"
-                 "Volley the ball"
-                 "Observe the ball")
-      :answer 2)
-    ( :question "\"Gridiron\" is used in the context of..."
-      :choices ( "Types of football"
-                 "Harry Potter sports"
-                 "Board games"
-                 "A legendary continent")
-      :answer 1)
-    ( :question "\"Schutzhund\" refers to..."
-      :choices ( "German school"
-                 "Dog sport"
-                 "Medieval monster"
-                 "Dog breed")
-      :answer 2)
-    ( :question "Which team won Euro 2004?"
-      :choices ( "England"
-                 "Czechia"
-                 "Portugal"
-                 "Greece")
-      :answer 4)
-    ( :question "Where is a \"centre half\" positioned in football?"
-      :choices ( "In defence"
-                 "In the middle of the pitch"
-                 "Between the goal posts"
-                 "In the half spaces between attackers")
-      :answer 1)
-    ( :question "Which group of tourists took Euro 1992 by storm?"
-      :choices ( "English"
-                 "Irish"
-                 "Danish"
-                 "German")
-      :answer 3)
-    ( :question "The \"panenka\" in football is what exactly?"
-      :choices ( "An offensive manoeuvre that leads to a goal"
-                 "Defence tactics to frustrate opponents"
-                 "Technique to shoot a penalty"
-                 "A super-effective dribbling move")
-      :answer 3))
+  (mapcar
+   (lambda (element)
+     (plist-put element :category "Sport"))
+   '(( :question "Football is a sport in which players..."
+       :choices ( "Hug the ball"
+                  "Kick the ball"
+                  "Volley the ball"
+                  "Observe the ball")
+       :answer 2)
+     ( :question "\"Gridiron\" is used in the context of..."
+       :choices ( "Types of football"
+                  "Harry Potter sports"
+                  "Board games"
+                  "A legendary continent")
+       :answer 1)
+     ( :question "\"Schutzhund\" refers to..."
+       :choices ( "German school"
+                  "Dog sport"
+                  "Medieval monster"
+                  "Dog breed")
+       :answer 2)
+     ( :question "Which team won Euro 2004?"
+       :choices ( "England"
+                  "Czechia"
+                  "Portugal"
+                  "Greece")
+       :answer 4)
+     ( :question "Where is a \"centre half\" positioned in football?"
+       :choices ( "In defence"
+                  "In the middle of the pitch"
+                  "Between the goal posts"
+                  "In the half spaces between attackers")
+       :answer 1)
+     ( :question "Which group of tourists took Euro 1992 by storm?"
+       :choices ( "English"
+                  "Irish"
+                  "Danish"
+                  "German")
+       :answer 3)
+     ( :question "The \"panenka\" in football is what exactly?"
+       :choices ( "An offensive manoeuvre that leads to a goal"
+                  "Defence tactics to frustrate opponents"
+                  "Technique to shoot a penalty"
+                  "A super-effective dribbling move")
+       :answer 3)))
   "Questions and answers about sport.")
 
 (defvar pub-trivia-data-video-games
-  '("Video Games"
-    ( :question "\"The Legend of Zelda: Link's Awakening\" was originally released on the..."
-      :choices ( "Super Nintendo Entertainment System"
-                 "Nintendo Gamecube"
-                 "Nintendo Gameboy"
-                 "Nintendo Wii")
+  (mapcar
+   (lambda (element)
+     (plist-put element :category "Video Games"))
+   '(( :question "\"The Legend of Zelda: Link's Awakening\" was originally released on the..."
+       :choices ( "Super Nintendo Entertainment System"
+                  "Nintendo Gamecube"
+                  "Nintendo Gameboy"
+                  "Nintendo Wii")
       :answer 3)
-    ( :question "The protagonist in the Metroid series is..."
-      :choices ( "Metroid"
-                 "Samus"
-                 "Luigi"
-                 "Zelda")
-      :answer 2)
-    ( :question "In Tales of Symphonia you mostly..."
-      :choices ( "compose music"
-                 "read stories"
-                 "think of Tales of Berseria"
-                 "save the world")
-      :answer 4)
-    ( :question "In StarCraft players..."
-      :choices ( "mostly fend off Zerglings"
-                 "explore the universe"
-                 "wonder where is Prince Arthas"
-                 "read the stars")
-      :answer 1)
-    ( :question "What is the name of Super Mario's brother?"
-      :choices ( "Wario"
-                 "Silvio"
-                 "Luigi"
-                 "Carlo")
-      :answer 3)
-    ( :question "In StarCraft players..."
-      :choices ( "mostly fend off Zerglings"
-                 "explore the universe"
-                 "wonder where is Prince Arthas"
-                 "read the stars")
-      :answer 1))
+     ( :question "The protagonist in the Metroid series is..."
+       :choices ( "Metroid"
+                  "Samus"
+                  "Luigi"
+                  "Zelda")
+       :answer 2)
+     ( :question "In Tales of Symphonia you mostly..."
+       :choices ( "compose music"
+                  "read stories"
+                  "think of Tales of Berseria"
+                  "save the world")
+       :answer 4)
+     ( :question "In StarCraft players..."
+       :choices ( "mostly fend off Zerglings"
+                  "explore the universe"
+                  "wonder where is Prince Arthas"
+                  "read the stars")
+       :answer 1)
+     ( :question "What is the name of Super Mario's brother?"
+       :choices ( "Wario"
+                  "Silvio"
+                  "Luigi"
+                  "Carlo")
+       :answer 3)
+     ( :question "In StarCraft players..."
+       :choices ( "mostly fend off Zerglings"
+                  "explore the universe"
+                  "wonder where is Prince Arthas"
+                  "read the stars")
+       :answer 1)))
   "Questions and answers about video games.")
 
 (defvar pub-trivia-data-emacs
-  '("Emacs"
-    ( :question "What to check when window placement make no sense?"
-      :choices ( "display-buffer-alist"
-                 "doctor"
-                 "report-emacs-bug"
-                 "set-window-configuration")
-      :answer 1)
-    ( :question "Default keybinding to get previous minibuffer value?"
-      :choices ( "C-p"
-                 "C-x p"
-                 "M-p"
-                 "C-M-p")
-      :answer 3)
-    ( :question "How many original themes has Protesilaos developed?"
-      :choices ( "Less than 10"
-                 "More than 40"
-                 "All the modus-themes"
-                 "About 20")
-      :answer 2)
-    ( :question "Default keybinding to read echo area messages?"
-      :choices ( "C-h m"
-                 "C-h r"
-                 "C-h a"
-                 "C-h e")
-      :answer 4)
-    ( :question "Which command is bound to \"C-x 4 c\" by default?"
-      :choices ( "clone-indirect-buffer-other-window"
-                 "copy-file"
-                 "copy-matching-lines"
-                 "copy-to-buffer")
-      :answer 1)
-    ( :question "Command to delete matching lines?"
-      :choices ( "occur"
-                 "flush-lines"
-                 "keep-lines"
-                 "consult-focus-lines")
-      :answer 2))
+  (mapcar
+   (lambda (element)
+     (plist-put element :category "Emacs"))
+   '(( :question "What to check when window placement make no sense?"
+       :choices ( "display-buffer-alist"
+                  "doctor"
+                  "report-emacs-bug"
+                  "set-window-configuration")
+       :answer 1)
+     ( :question "Default keybinding to get previous minibuffer value?"
+       :choices ( "C-p"
+                  "C-x p"
+                  "M-p"
+                  "C-M-p")
+       :answer 3)
+     ( :question "How many original themes has Protesilaos developed?"
+       :choices ( "Less than 10"
+                  "More than 40"
+                  "All the modus-themes"
+                  "About 20")
+       :answer 2)
+     ( :question "Default keybinding to read echo area messages?"
+       :choices ( "C-h m"
+                  "C-h r"
+                  "C-h a"
+                  "C-h e")
+       :answer 4)
+     ( :question "Which command is bound to \"C-x 4 c\" by default?"
+       :choices ( "clone-indirect-buffer-other-window"
+                  "copy-file"
+                  "copy-matching-lines"
+                  "copy-to-buffer")
+       :answer 1)
+     ( :question "Command to delete matching lines?"
+       :choices ( "occur"
+                  "flush-lines"
+                  "keep-lines"
+                  "consult-focus-lines")
+       :answer 2)))
   "Questions and answers about Emacs.")
 
 (defvar pub-trivia-data-keyboards
-  '("Mechanical keyboards"
-    ( :question "In the mechanical keyboard community, \"Alice\" is..."
-      :choices ( "Famous influencer"
-                 "Keyboard layout"
-                 "Switch manufacture"
-                 "Keycap designer")
-      :answer 2)
-    ( :question "What does \"clacky\" refer to?"
-      :choices ( "Whimsical keyboard layout"
-                 "The actuation mechanism of a switch"
-                 "High-pitched sound"
-                 "Expensive keycap sets")
-      :answer 3)
-    ( :question "The Cherry MX Red is a famous..."
-      :choices ( "Linear switch"
-                 "Tactile switch"
-                 "Clicky switch"
-                 "Silent switch")
-      :answer 1)
-    ( :question "The OEM keycap profile is closer to..."
-      :choices ( "XDA"
-                 "MOA"
-                 "MTNU"
-                 "Cherry")
-      :answer 4))
+  (mapcar
+   (lambda (element)
+     (plist-put element :category "Mechanical keyboards"))
+   '(( :question "In the mechanical keyboard community, \"Alice\" is..."
+       :choices ( "Famous influencer"
+                  "Keyboard layout"
+                  "Switch manufacture"
+                  "Keycap designer")
+       :answer 2)
+     ( :question "What does \"clacky\" refer to?"
+       :choices ( "Whimsical keyboard layout"
+                  "The actuation mechanism of a switch"
+                  "High-pitched sound"
+                  "Expensive keycap sets")
+       :answer 3)
+     ( :question "The Cherry MX Red is a famous..."
+       :choices ( "Linear switch"
+                  "Tactile switch"
+                  "Clicky switch"
+                  "Silent switch")
+       :answer 1)
+     ( :question "The OEM keycap profile is closer to..."
+       :choices ( "XDA"
+                  "MOA"
+                  "MTNU"
+                  "Cherry")
+       :answer 4)))
   "Questions and answers about mechanical keyboards.")
 
 ;; TODO 2026-11-11: I want to change this approach.  It should be
@@ -500,13 +510,7 @@ In this case, abort after NUMBER-OF-ATTEMPTS."
     (while (not (length= all-questions-choices number-of-questions))
       (let* ((questions-choices-variable (seq-random-elt pub-trivia-data-lists))
              (questions-choices-value (symbol-value questions-choices-variable))
-             (category (car questions-choices-value))
-             (questions-choices (cdr questions-choices-value))
-             (data (mapcar
-                    (lambda (element)
-                      (plist-put element :category category))
-                    questions-choices))
-             (question-choices (seq-random-elt data)))
+             (question-choices (seq-random-elt questions-choices-value)))
         (if (and (member question-choices all-questions-choices)
                  (> number-of-attempts 0))
             (progn
