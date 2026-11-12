@@ -370,7 +370,7 @@ describing the data.  While DATA is a plist of the form:
        :choices ( "You want your colleagues to know you are busy"
                   "You blend in with the decor at the office"
                   "You love a subtle touch to the key press"
-                  "You prefer quiet places")
+                  "You want the entire place to be quiet")
        :answer 1)))
   "Questions and answers about mechanical keyboards.")
 
