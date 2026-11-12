@@ -311,7 +311,13 @@ describing the data.  While DATA is a plist of the form:
                   "flush-lines"
                   "keep-lines"
                   "consult-focus-lines")
-       :answer 2)))
+       :answer 2)
+     ( :question "With orderless you..."
+       :choices ( "Embrace the disorderly life"
+                  "Speed up isearch-forward-regexp"
+                  "Extend the completion-styles"
+                  "Affect the completion-metadata" )
+       :answer 3)))
   "Questions and answers about Emacs.")
 
 (defvar pub-trivia-data-keyboards
