@@ -330,6 +330,12 @@ describing the data.  While DATA is a plist of the form:
                   "Switch manufacture"
                   "Keycap designer")
        :answer 2)
+     ( :question "What material produces the deepest sound, other things being constant?"
+       :choices ( "Nylon"
+                  "Polyoxymethylene (POM)"
+                  "Polycarbonate (PC)"
+                  "Carbon fibre")
+       :answer 1)
      ( :question "What does \"clacky\" refer to?"
        :choices ( "Whimsical keyboard layout"
                   "The actuation mechanism of a switch"
