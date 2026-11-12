@@ -530,16 +530,24 @@ and correct choices, respectively."
      '("5" "10" "15" "20")
      nil t nil 'pub-trivia-number-of-questions-prompt-history default)))
 
+;; Copy of `denote-sort-random'.
+(defun pub-trivia-sort-random (elements)
+  "Shuffle ELEMENTS of list randomly."
+  (let* ((elements (copy-sequence elements))
+         (shuffled-list nil))
+    (while elements
+      (let* ((list-length (length elements))
+             (element (nth (random list-length) elements)))
+        (setq elements (delq element elements))
+        (push element shuffled-list)))
+    shuffled-list))
+
 (defun pub-trivia-get-questions (number-of-questions)
   "Return list with NUMBER-OF-QUESTIONS from `pub-trivia-data-lists'."
-  (setq number-of-questions (- number-of-questions 1))
-  (let ((all-questions-choices (apply #'append (mapcar #'symbol-value pub-trivia-data-lists)))
-        (result nil))
-    (while (not (length= result number-of-questions))
-      (let ((question-choices (seq-random-elt all-questions-choices)))
-        (setq all-questions-choices (delete question-choices all-questions-choices))
-        (push question-choices result)))
-    result))
+  ;; (setq number-of-questions (- number-of-questions 1))
+  (let* ((all-questions-choices (apply #'append (mapcar #'symbol-value pub-trivia-data-lists)))
+         (all-sorted (pub-trivia-sort-random all-questions-choices)))
+    (seq-take all-sorted number-of-questions)))
 
 ;;;###autoload
 (defun pub-trivia (number-of-questions)
