@@ -530,17 +530,14 @@ and correct choices, respectively."
      '("5" "10" "15" "20")
      nil t nil 'pub-trivia-number-of-questions-prompt-history default)))
 
-;; NOTE 2026-11-12: This review should fix it for small numbers, but
-;; will not always work.  I think this is okay in practice.
 (defun pub-trivia-get-questions (number-of-questions)
   "Return list with NUMBER-OF-QUESTIONS from `pub-trivia-data-lists'."
-  (let ((all-questions-choices (mapcar #'symbol-value pub-trivia-data-lists))
+  (setq number-of-questions (- number-of-questions 1))
+  (let ((all-questions-choices (apply #'append (mapcar #'symbol-value pub-trivia-data-lists)))
         (result nil))
     (while (not (length= result number-of-questions))
-      (let* ((questions-choices-variable (seq-random-elt pub-trivia-data-lists))
-             (questions-choices-value (symbol-value questions-choices-variable))
-             (question-choices (seq-random-elt questions-choices-value)))
-        (delete question-choices all-questions-choices)
+      (let ((question-choices (seq-random-elt all-questions-choices)))
+        (setq all-questions-choices (delete question-choices all-questions-choices))
         (push question-choices result)))
     result))
 
