@@ -330,6 +330,12 @@ describing the data.  While DATA is a plist of the form:
                   "High-pitched sound"
                   "Expensive keycap sets")
        :answer 3)
+     ( :question "\"Thock\" is a keyboard's..."
+       :choices ( "Mechanism under the keycaps"
+                  "The part that connects switches to the board"
+                  "Piece of plastic for wireless communication"
+                  "Sound profile")
+       :answer 4)
      ( :question "The Cherry MX Red is a famous..."
        :choices ( "Linear switch"
                   "Tactile switch"
