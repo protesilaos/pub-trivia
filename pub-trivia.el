@@ -347,7 +347,13 @@ describing the data.  While DATA is a plist of the form:
                   "MOA"
                   "MTNU"
                   "Cherry")
-       :answer 4)))
+       :answer 4)
+     ( :question "You use the Kailh Box Blue Navy switches when..."
+       :choices ( "You want your colleagues to know you are busy"
+                  "You blend in with the decor at the office"
+                  "You love a subtle touch to the key press"
+                  "You prefer quiet places")
+       :answer 1)))
   "Questions and answers about mechanical keyboards.")
 
 ;; TODO 2026-11-11: I want to change this approach.  It should be
